@@ -5,13 +5,15 @@ import TodoList from './components/TodoList';
 
 function createBulkTodos() {
   const array = [];
-  for (let i = 1; i <= 2500; i++) {
+  for (let i = 1; i <= 3; i++) {
     array.push({
       id: i,
-      text: `할 일 ${i}`,
+      text: `임시 데이터 ${i}`,
       checked: false,
     });
   }
+
+  array[0].checked = true;
   return array;
 }
 
